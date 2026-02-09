@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+</head>
+
+<body style="
+    font-family: Palatino;
+    text-align: center;
+    margin-top: 80px;
+    background-color: #e6d3b1;
+">
+
+    <!-- MENU LEFT -->
+    <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 260px;
+        height: 100%;
+        background-color: #d6c2a3;
+        padding-top: 60px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    ">
+
+   	 
+<div style="margin: 35px; font-weight: bold; color:#003366;">
+    Welcome to my personal website!
+</div>
+
+        <ul style="list-style: none; padding: 0; font-size: 16px;">
+
+            <li style="margin: 35px;">
+                <a href="research.html" style="text-decoration:none; color:#003366;">
+                    Research
+                </a>
+            </li>
+
+            <li style="margin: 35px;">
+                <a href="Data_Sets.HTML" style="text-decoration:none; color:#003366;">
+                    Datasets
+                </a>
+            </li>
+
+            <li style="margin: 35px;">
+                <a href="eviews_add_inns.html" style="text-decoration:none; color:#003366;">
+                    EViews Add-ins
+                </a>
+            </li>
+
+ <!-- CLASS MATERIAL CLICKABLE -->
+		<li style="margin: 35px;">
+    			<a href="class_material.html"
+      			 style="text-decoration:none; color:#003366;">
+      			  Teaching Materials
+    		</a>
+		</li>
+
+
+            <li style="margin: 35px;">
+                <a href="events.html" style="text-decoration:none; color:#003366;">
+                    Academic Events: Past & Upcoming
+                </a>
+            </li>
+
+            <li style="margin: 35px;">
+                <a href="contact.html" style="text-decoration:none; color:#003366;">
+                    Contact
+                </a>
+            </li>
+
+            <li style="margin: 35px;">
+                <a href="https://www.strava.com/athletes/14132251" style="text-decoration:none; color:#003366;">
+                     🚴‍ Training & Racing 🚴‍♂️
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <h1>Nicolás Ronderos, PhD</h1>
+   
+	 <img src="Foto Personal.jpeg"
+         alt="Photo of Nicolás Ronderos"
+         style="width:300px; height:300px; object-fit: cover; margin-top:20px;">
+
+    
+    <p style="margin-top: 0; font-size: 18px;">
+        <a href="CV.pdf" target="_blank"
+           style="text-decoration: none; color: #0000EE;font-style: italic;">
+            Curriculum Vitae
+        </a>
+    </p>
+
+	<div style="width: 100%; display: flex; justify-content: flex-end;">
+  	<div style="width: 75%; margin-left: 10%; text-align: justify;">
+    	<p>
+     	 I am a <strong>professor</strong> with a strong academic interest in quantitative methods in economics, with particular emphasis on <strong>time series analysis, applied macroeconometrics, and financial econometrics</strong>. My research focuses on the study of dynamic economic processes using advanced and innovative econometric methodologies, with a sustained interest in <strong>forecasting</strong> and participation in international <strong>forecasting competitions</strong> as a rigorous benchmark for model performance.
+    	</p>
+  	</div>
+	</div>
+
+	<div style="width: 100%; display: flex; justify-content: flex-end;">
+  	<div style="width: 75%; margin-left: 10%; text-align: justify;">
+   	 <p>
+     	 A central line of my work examines the macroeconomic effects of informal sectors on economic outcomes, including growth, labor markets, health economics and institutional quality. I have designed modified instrumental variable methods aimed at attenuating endogeneity and weak-instrument problems in large samples. I have also conducted research on contagion in <strong>financial markets</strong>, portfolio theory, and volatility modeling, combining structural, spectral, and multivariate approaches to analyze risk transmission and asset dynamics. My research has resulted in peer-reviewed publications on topics such as applied macroeconomic dynamics, econometric methods and health economics as well as the <strong>development of certified econometric software tools</strong>. Complementing this academic work, I have participated in policy-oriented <strong>consulting projects</strong> with government institutions, where methodological rigor must align with real-world decision-making. 
+   	 </p>
+  	</div>
+	</div>
+
+	<div style="width: 100%; display: flex; justify-content: flex-end;">
+  	<div style="width: 75%; margin-left: 10%; text-align: justify;">
+   	 <p>
+     	 Outside academia, I maintain an active engagement in endurance sports—particularly amateur <strong>competitive cycling</strong>—, which contribute to a balanced approach to academic productivity, social life, and physical and mental well-being.
+   	 </p>
+  	</div>
+	</div>
+
+    <p style="
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+">
+        Welcome, you are visitor number: <span id="counter"></span>
+    </p>
+
+    <script>
+        let visits = localStorage.getItem("visits");
+
+        if (visits === null) {
+            visits = 1;
+        } else {
+            visits = parseInt(visits) + 1;
+        }
+
+        localStorage.setItem("visits", visits);
+        document.getElementById("counter").innerText = visits;
+    </script>
+
+
+
+</body>
+</html>
